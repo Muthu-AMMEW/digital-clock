@@ -30,7 +30,7 @@ export default function Clock() {
             <div className="row min-vw-100 min-vh-100 justify-content-center align-items-center bg-info-subtle bg-image">
                 <div className="col-8 col-sm-6 col-md-5 col-lg-4 col-xl-3">
 
-                    <div className="bg-white d-flex flex-column justify-content-center align-items-center w-100 p-3 rounded-5">
+                    <div className="bg-white d-flex flex-column justify-content-center align-items-center w-100 pt-3 px-3 rounded-5">
                         <div className='text-center text-success h3 m-3'>Digital Clock</div>
                         <div className="h2">
                             {formatTimeWithLeadingZero(formatHour(currentTime.getHours()))} :
@@ -39,6 +39,7 @@ export default function Clock() {
                             {currentTime.getHours() >= 12 ? " PM" : " AM"}
                         </div>
                         <div className="">{formatDate(currentTime)}</div>
+                        <p className='fst-italic mt-2'>Designed By <a href="https://www.linkedin.com/in/muthu-ammew/" rel="noreferrer" target='_blank'>Muthu</a></p>
                     </div>
                 </div>
             </div>

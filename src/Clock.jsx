@@ -39,7 +39,7 @@ export default function Clock() {
                             {currentTime.getHours() >= 12 ? " PM" : " AM"}
                         </div>
                         <div className="">{formatDate(currentTime)}</div>
-                        <p className='fst-italic mt-2'>Designed By <a href="https://www.linkedin.com/in/muthu-ammew/" rel="noreferrer" target='_blank'>Muthu</a></p>
+                        <a href="https://www.linkedin.com/in/muthu-ammew" className="text-black text-decoration-none mt-2">Designed by <span className="text-success text-decoration-underline fw-bolder">Muthu</span></a>
                     </div>
                 </div>
             </div>
